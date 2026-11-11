@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mallapro.cl/schemas/mallapro-1.schema.json",
+  "title": "mallapro-1",
+  "description": "Malla curricular de una carrera. Salida del Curador de mallas de Malla Pro.",
+  "type": "object",
+  "required": ["formato", "carrera", "universidad", "version_plan", "semestres", "advertencias"],
+  "properties": {
+    "formato": { "const": "mallapro-1" },
+    "carrera": { "type": "string" },
+    "universidad": { "type": "string" },
+    "version_plan": { "type": "string", "description": "Año o versión del plan (RN-1)." },
+    "codigo_programa": { "type": ["string", "null"] },
+    "sistema_creditos": { "type": "string" },
+    "total_creditos": { "type": ["number", "null"] },
+    "semestres": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["numero", "cursos"],
+        "properties": {
+          "numero": { "type": "integer", "minimum": 1 },
+          "cursos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["ref", "nombre", "prereq_estado", "prerrequisitos"],
+              "properties": {
+                "ref": { "type": "string", "minLength": 1, "description": "Código del ramo o, si no tiene, su número en el documento (RN-2)." },
+                "codigo": { "type": ["string", "null"] },
+                "numero_en_documento": { "type": ["integer", "null"] },
+                "nombre": { "type": "string" },
+                "creditos": { "type": ["number", "null"] },
+                "prereq_estado": { "enum": ["ninguno", "conocido", "desconocido"] },
+                "prerrequisitos": { "type": "array", "items": { "type": "string" }, "description": "Todos se exigen («Y», RN-4)." },
+                "semestres_aprobados_requeridos": { "type": ["integer", "null"] },
+                "prereq_texto": { "type": ["string", "null"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "advertencias": { "type": "array", "items": { "type": "string" } },
+    "curacion": {
+      "type": "object",
+      "properties": {
+        "curador": { "type": ["string", "null"] },
+        "fecha": { "type": "string" },
+        "ramos_revisados": { "type": "integer", "minimum": 0 },
+        "ramos_totales": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "formato": "mallapro-1",
+  "carrera": "Ingeniería Civil Industrial (ejemplo ficticio)",
+  "universidad": "Universidad de Ejemplo",
+  "codigo_programa": "ICI-2024",
+  "sistema_creditos": "SCT",
+  "total_creditos": 60,
+  "semestres": [
+    {
+      "numero": 1,
+      "cursos": [
+        {
+          "ref": "MAT101",
+          "codigo": "MAT101",
+          "numero_en_documento": 1,
+          "nombre": "Cálculo I",
+          "creditos": 6,
+          "prereq_estado": "ninguno",
+          "prerrequisitos": [],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": null
+        },
+        {
+          "ref": "MAT102",
+          "codigo": "MAT102",
+          "numero_en_documento": 2,
+          "nombre": "Álgebra",
+          "creditos": 6,
+          "prereq_estado": "ninguno",
+          "prerrequisitos": [],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": null
+        },
+        {
+          "ref": "3",
+          "codigo": null,
+          "numero_en_documento": 3,
+          "nombre": "Taller de Comunicación",
+          "creditos": null,
+          "prereq_estado": "desconocido",
+          "prerrequisitos": [],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": null
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "cursos": [
+        {
+          "ref": "MAT201",
+          "codigo": "MAT201",
+          "numero_en_documento": 4,
+          "nombre": "Cálculo II",
+          "creditos": 6,
+          "prereq_estado": "conocido",
+          "prerrequisitos": ["MAT101"],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": "MAT101"
+        },
+        {
+          "ref": "FIS101",
+          "codigo": "FIS101",
+          "numero_en_documento": 5,
+          "nombre": "Física I",
+          "creditos": 6,
+          "prereq_estado": "conocido",
+          "prerrequisitos": ["MAT101", "MAT102"],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": "MAT101 y MAT102"
+        },
+        {
+          "ref": "IND201",
+          "codigo": "IND201",
+          "numero_en_documento": 6,
+          "nombre": "Introducción a la Economía",
+          "creditos": 6,
+          "prereq_estado": "conocido",
+          "prerrequisitos": [],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": "MAT101 o MAT102"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "cursos": [
+        {
+          "ref": "IND301",
+          "codigo": "IND301",
+          "numero_en_documento": 7,
+          "nombre": "Investigación de Operaciones",
+          "creditos": 6,
+          "prereq_estado": "conocido",
+          "prerrequisitos": ["MAT201"],
+          "semestres_aprobados_requeridos": null,
+          "prereq_texto": "MAT201"
+        },
+        {
+          "ref": "IND302",
+          "codigo": "IND302",
+          "numero_en_documento": 8,
+          "nombre": "Práctica Inicial",
+          "creditos": 6,
+          "prereq_estado": "conocido",
+          "prerrequisitos": [],
+          "semestres_aprobados_requeridos": 2,
+          "prereq_texto": "2 semestres aprobados"
+        }
+      ]
+    }
+  ],
+  "advertencias": [
+    "IND201 exige MAT101 o MAT102 (alternativa); quedó en prereq_texto para revisión.",
+    "El ramo 3 (Taller de Comunicación) no muestra código, créditos ni requisitos legibles.",
+    "La suma de créditos visibles (42) no coincide con el total del documento (60)."
+  ]
+}

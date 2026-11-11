@@ -1,0 +1,574 @@
+{
+  "carrera": "Ingeniería Civil Industrial",
+  "total_creditos": 400,
+  "semestres": [
+    {
+      "numero": 1,
+      "cursos": [
+        {
+          "id": 1,
+          "codigo": "CFIS310",
+          "nombre": "Física General",
+          "sct": 18,
+          "prerrequisitos": [],
+          "area": "fisica"
+        },
+        {
+          "id": 2,
+          "codigo": "FMMP012",
+          "nombre": "Introducción a las Matemáticas",
+          "sct": 16,
+          "prerrequisitos": [],
+          "area": "matematica"
+        },
+        {
+          "id": 3,
+          "codigo": "TDFI101",
+          "nombre": "Introducción a la Ingeniería",
+          "sct": 16,
+          "prerrequisitos": [],
+          "area": "formacion"
+        },
+        {
+          "id": 4,
+          "codigo": "TDFI102",
+          "nombre": "Introducción a la Programación",
+          "sct": 18,
+          "prerrequisitos": [],
+          "area": "computacion"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "cursos": [
+        {
+          "id": 5,
+          "codigo": "CEGHC11",
+          "nombre": "Habilidades Comunicativas",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "formacion"
+        },
+        {
+          "id": 6,
+          "codigo": "CFIS328",
+          "nombre": "Física Experimental",
+          "sct": 16,
+          "prerrequisitos": [
+            1,
+            2
+          ],
+          "area": "fisica"
+        },
+        {
+          "id": 7,
+          "codigo": "FMMP112",
+          "nombre": "Cálculo Diferencial",
+          "sct": 16,
+          "prerrequisitos": [
+            2
+          ],
+          "area": "matematica"
+        },
+        {
+          "id": 8,
+          "codigo": "QUIM090",
+          "nombre": "Química y Ambiente",
+          "sct": 10,
+          "prerrequisitos": [],
+          "area": "quimica"
+        },
+        {
+          "id": 9,
+          "codigo": "TDFI103",
+          "nombre": "Base de Datos",
+          "sct": 15,
+          "prerrequisitos": [
+            4
+          ],
+          "area": "computacion"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "cursos": [
+        {
+          "id": 10,
+          "codigo": "ACAD101",
+          "nombre": "Taller de Innovación y Emprendimiento I",
+          "sct": 10,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "gestion"
+        },
+        {
+          "id": 11,
+          "codigo": "CFIS332",
+          "nombre": "Mecánica",
+          "sct": 18,
+          "prerrequisitos": [
+            6,
+            7
+          ],
+          "area": "fisica"
+        },
+        {
+          "id": 12,
+          "codigo": "FMMP212",
+          "nombre": "Cálculo Integral",
+          "sct": 16,
+          "prerrequisitos": [
+            7
+          ],
+          "area": "matematica"
+        },
+        {
+          "id": 13,
+          "codigo": "TDFI104",
+          "nombre": "Compliance & Accountability",
+          "sct": 10,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "formacion"
+        },
+        {
+          "id": 14,
+          "codigo": "CIND100",
+          "nombre": "Procesos Industriales",
+          "sct": 12,
+          "prerrequisitos": [
+            1,
+            8
+          ],
+          "area": "industrial"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "cursos": [
+        {
+          "id": 15,
+          "codigo": "ACAD102",
+          "nombre": "Taller de Innovación y Emprendimiento II",
+          "sct": 10,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "gestion"
+        },
+        {
+          "id": 16,
+          "codigo": "CFIS344",
+          "nombre": "Electricidad y Magnetismo",
+          "sct": 14,
+          "prerrequisitos": [
+            11,
+            12
+          ],
+          "area": "fisica"
+        },
+        {
+          "id": 17,
+          "codigo": "CIND311",
+          "nombre": "Práctica I",
+          "sct": 16,
+          "prerrequisitos": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            12,
+            13
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 18,
+          "codigo": "FMMP312",
+          "nombre": "Sistemas y Ecuaciones Diferenciales Lineales",
+          "sct": 16,
+          "prerrequisitos": [
+            12
+          ],
+          "area": "matematica"
+        },
+        {
+          "id": 19,
+          "codigo": "ING119",
+          "nombre": "Inglés I",
+          "sct": 12,
+          "prerrequisitos": [],
+          "area": "formacion"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "cursos": [
+        {
+          "id": 20,
+          "codigo": "CIND111",
+          "nombre": "Economía Circular",
+          "sct": 12,
+          "prerrequisitos": [
+            14
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 21,
+          "codigo": "CIND112",
+          "nombre": "Investigación de Operaciones",
+          "sct": 12,
+          "prerrequisitos": [
+            12
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 22,
+          "codigo": "CIND411",
+          "nombre": "Economía",
+          "sct": 14,
+          "prerrequisitos": [
+            12
+          ],
+          "area": "economia"
+        },
+        {
+          "id": 23,
+          "codigo": "FMSP316",
+          "nombre": "Métodos Cuantitativos",
+          "sct": 20,
+          "prerrequisitos": [
+            12
+          ],
+          "area": "matematica"
+        },
+        {
+          "id": 24,
+          "codigo": "ING129",
+          "nombre": "Inglés II",
+          "sct": 12,
+          "prerrequisitos": [
+            19
+          ],
+          "area": "formacion"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "cursos": [
+        {
+          "id": 25,
+          "codigo": "ACAD103",
+          "nombre": "Taller de Innovación y Emprendimiento III",
+          "sct": 10,
+          "prerrequisitos": [
+            15
+          ],
+          "area": "gestion"
+        },
+        {
+          "id": 26,
+          "codigo": "CIND113",
+          "nombre": "Gestión de la Cadena de Suministro",
+          "sct": 12,
+          "prerrequisitos": [
+            21
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 27,
+          "codigo": "CIND211",
+          "nombre": "Redes y Sistemas Estocásticos en Ingeniería",
+          "sct": 12,
+          "prerrequisitos": [
+            21,
+            23
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 28,
+          "codigo": "IIND412",
+          "nombre": "Costos y Presupuestos",
+          "sct": 10,
+          "prerrequisitos": [
+            12
+          ],
+          "area": "economia"
+        },
+        {
+          "id": 29,
+          "codigo": "ING239",
+          "nombre": "Inglés III",
+          "sct": 12,
+          "prerrequisitos": [
+            24
+          ],
+          "area": "formacion"
+        },
+        {
+          "id": 30,
+          "codigo": "TDFI105",
+          "nombre": "Minería de Datos",
+          "sct": 12,
+          "prerrequisitos": [
+            23,
+            9
+          ],
+          "area": "computacion"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "cursos": [
+        {
+          "id": 31,
+          "codigo": "CEGRS14",
+          "nombre": "Responsabilidad Social",
+          "sct": 6,
+          "prerrequisitos": [],
+          "area": "formacion"
+        },
+        {
+          "id": 32,
+          "codigo": "CIND114",
+          "nombre": "Toma de Decisiones en la Cadena de Suministro",
+          "sct": 14,
+          "prerrequisitos": [
+            26
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 33,
+          "codigo": "CIND212",
+          "nombre": "Toma de Decisiones Bajo Incertidumbre",
+          "sct": 14,
+          "prerrequisitos": [
+            27
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 34,
+          "codigo": "IIND413",
+          "nombre": "Ingeniería Económica",
+          "sct": 12,
+          "prerrequisitos": [
+            28
+          ],
+          "area": "economia"
+        },
+        {
+          "id": 35,
+          "codigo": "ING249",
+          "nombre": "Inglés IV",
+          "sct": 12,
+          "prerrequisitos": [
+            29
+          ],
+          "area": "formacion"
+        },
+        {
+          "id": 36,
+          "codigo": "TDFI106",
+          "nombre": "Gestión de la Transformación Digital",
+          "sct": 12,
+          "prerrequisitos": [
+            13
+          ],
+          "area": "computacion"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "cursos": [
+        {
+          "id": 37,
+          "codigo": "CIND213",
+          "nombre": "Simulación de Sistemas",
+          "sct": 8,
+          "prerrequisitos": [
+            33
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 38,
+          "codigo": "CIND214",
+          "nombre": "Estrategia y Sustentabilidad en Cadena de Suministro",
+          "sct": 7,
+          "prerrequisitos": [
+            33
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 39,
+          "codigo": "CIND215",
+          "nombre": "Analítica",
+          "sct": 7,
+          "prerrequisitos": [
+            33
+          ],
+          "area": "computacion"
+        },
+        {
+          "id": 40,
+          "codigo": "CIND312",
+          "nombre": "Seminario de Licenciatura en Ciencias de la Ingeniería",
+          "sct": 6,
+          "prerrequisitos": [
+            30,
+            34,
+            33,
+            32
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 41,
+          "codigo": "CIND313",
+          "nombre": "Práctica II",
+          "sct": 26,
+          "prerrequisitos": [
+            30,
+            34,
+            33,
+            32
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 42,
+          "codigo": "IIND414",
+          "nombre": "Evaluación de Proyectos",
+          "sct": 12,
+          "prerrequisitos": [
+            34
+          ],
+          "area": "economia"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "cursos": [
+        {
+          "id": 43,
+          "codigo": "CIND216",
+          "nombre": "Finanzas Corporativas",
+          "sct": 10,
+          "prerrequisitos": [
+            34
+          ],
+          "area": "economia"
+        },
+        {
+          "id": 44,
+          "codigo": "CIND217",
+          "nombre": "Inteligencia de Negocios",
+          "sct": 14,
+          "prerrequisitos": [
+            39
+          ],
+          "area": "computacion"
+        },
+        {
+          "id": 45,
+          "codigo": "CIND218",
+          "nombre": "Marketing",
+          "sct": 10,
+          "prerrequisitos": [
+            22
+          ],
+          "area": "gestion"
+        },
+        {
+          "id": 46,
+          "codigo": "CIND219",
+          "nombre": "Gestión Estratégica",
+          "sct": 10,
+          "prerrequisitos": [
+            22
+          ],
+          "area": "gestion"
+        },
+        {
+          "id": 47,
+          "codigo": "CIND220",
+          "nombre": "Tópicos de Especialidad I",
+          "sct": 10,
+          "prerrequisitos": [
+            40
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 48,
+          "codigo": "CIND314",
+          "nombre": "Portafolio de Proyectos",
+          "sct": 9,
+          "prerrequisitos": [
+            40
+          ],
+          "area": "industrial"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "cursos": [
+        {
+          "id": 49,
+          "codigo": "CIND221",
+          "nombre": "Tópicos de Especialidad II",
+          "sct": 12,
+          "prerrequisitos": [
+            40
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 50,
+          "codigo": "CIND222",
+          "nombre": "Tópicos de Especialidad III",
+          "sct": 12,
+          "prerrequisitos": [
+            40
+          ],
+          "area": "industrial"
+        },
+        {
+          "id": 51,
+          "codigo": "CIND315",
+          "nombre": "Proyecto de Título",
+          "sct": 45,
+          "prerrequisitos": [
+            48
+          ],
+          "area": "industrial"
+        }
+      ]
+    }
+  ]
+}
